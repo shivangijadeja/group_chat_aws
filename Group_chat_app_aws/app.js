@@ -1,9 +1,9 @@
 const express=require('express')
+require('dotenv').config();
 const cors=require('cors')
 const app=express()
 const sequelize=require('./utils/database')
 const PORT=process.env.PORT || 8000
-require('dotenv').config();
 
 app.use(cors({
     origin:"*",
