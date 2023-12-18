@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/login.css">
+    <title>Chat App</title>
+</head>
+<body>
+    <h1>Chat App</h1>
+    <div class="container row col-md-12 col-sm-12">
+        <div class="col-md-6">
+            <div class="col-md-12">
+                <form action="" class="create_group">
+                    <label for="grp_name">Name of the group</label>
+                    <input type="text" placeholder="Add name of group" class="grp_name">
+                    <label for="invite people">Invite People</label>
+                    <ul class="user_list"></ul>
+                    <button type="submit" class="btn-sm create_grp_btn" style="width: 30%;">Create Group</button>
+                    <button class="btn-sm edit_grp_btn invisible" style="width: 30%; float: inline-end;">Save Changes</button>
+                </form>
+            </div>
+            <div class="col-md-12">
+                <table class="list_of_groups">
+                    <tr>
+                        <li class="list-group-item">Common-chats</li>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <input type="text" name="grp_name" id="selected_grp_name" value="Common-chats">
+            <table class="msg_table">
+        
+            </table>
+            <div class="container col-md-12 col-sm-12 row ">
+                <input type="text" name="message" id="message_box" class="col-md-10 col-sm-12">
+                <button type="submit" class="col-md-2 col-sm-12 send_btn">Send</button>
+            </div>
+        </div>
+        
+    </div>
+    <hr>
+    
+    
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.0/axios.min.js"></script>
+<script src="./public/chat.js"></script>
+</html>
